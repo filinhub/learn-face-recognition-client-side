@@ -33,7 +33,7 @@ export default function FaceRecognition() {
 
   return (
     <Layout>
-      <Seo templateTitle='Alert' />
+      <Seo templateTitle='Face Recognition v1' />
 
       <main>
         <section className=''>
