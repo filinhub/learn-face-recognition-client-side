@@ -35,6 +35,19 @@ export default function HomePage() {
 
             <div className='mt-6'>
               <Typography as='h2' variant='h6'>
+                Page:
+              </Typography>
+              <div className='mt-2 flex flex-wrap justify-center gap-2'>
+                {page.map(({ title, route }) => (
+                  <ButtonLink key={route} href={route} variant='outline'>
+                    {title}
+                  </ButtonLink>
+                ))}
+              </div>
+            </div>
+
+            <div className='mt-6'>
+              <Typography as='h2' variant='h6'>
                 Sandbox:
               </Typography>
               <div className='mt-2 flex flex-wrap justify-center gap-2'>
@@ -60,6 +73,13 @@ export default function HomePage() {
 }
 
 //#region  //*=========== Sandbox ===========
+
+const page = [
+  {
+    title: 'Face Recognition v1',
+    route: '/face_recognition_v1',
+  },
+];
 const sandbox = [
   {
     title: 'Typography',
