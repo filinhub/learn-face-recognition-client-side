@@ -79,6 +79,10 @@ const page = [
     title: 'Face Recognition v1',
     route: '/face_recognition_v1',
   },
+  {
+    title: 'Face Register v2',
+    route: '/face_register_v2',
+  },
 ];
 const sandbox = [
   {
